@@ -59,8 +59,8 @@ body{
   display: none;
 }
 #header .nav a{
-  color: #000000;
-  font-size: 18px;
+  color: #282828;
+  font-size: 20px;
 }
 #header .nav img {
     margin-top: -10px;
@@ -80,15 +80,15 @@ body{
 }
 .titlecard .centered-text{
     position:absolute ;
-    top:30%;
+    top:35%;
     left: 50%;
     transform: translate(-50%,-50%);
     color:#ffffff ;
     letter-spacing: 4px;
     font-weight: 700;
-    font-size: 90px;
+    font-size: 80px;
     text-align: center;
-    width: 90%;
+    width: 80%;
     padding: 0 20px;
 }
 .titlecard .buttoncu{
@@ -101,7 +101,7 @@ body{
 .titlecard .buttoncu a{
   padding:  10px 30px;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 23px;
   display: flex;
   font-weight: 600;
   justify-content: center;
@@ -113,16 +113,15 @@ body{
 }
 .titlecard .buttoncu a:hover{
   background-color: #ffffff;
-  border: 2px solid #CB3827;
-  color: #CB3827;
+  border: 2px solid #F07722;
+  color: #F07722;
 }
 @media screen and (max-width: 600px) {
-  #header {
-    height: 150px;
-  }
   #header .mobile-logo{
-    display: block;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
   }
   #header .mobile-logo img {
     margin-top: -10px;
@@ -130,12 +129,8 @@ body{
     width: 170px;
     height: 95px;
   }
-  #header .nav img,
-  #header .nav  .nava {
+  #header .nav{
     display: none;
-  }
-  .titlecard {
-    margin-top: 150px;
   }
   .titlecard .centered-text{
     font-weight: 700;
@@ -144,15 +139,36 @@ body{
   .titlecard .buttoncu a{
     font-size: 20px;
   }
+  .buttoncu-nav a{
+    padding:  10px 30px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 14px;
+    background-color: #ffffff;
+    border: 2px solid #F07722;
+    color: #F07722;
+  }
+  .buttoncu-nav a:hover{
+    background-color: #F07722;
+    color: #ffffff;
+  }
+  .titlecard .buttoncu a{
+    display: none;
+  }
+  .titlecard .centered-text{
+    top: 50%;
+  }
 }
 @media screen and (max-width: 950px) {
   .titlecard .centered-text{
-      font-size: 55px;
+      font-size: 45px;
   }
 }
 .service-title{
   color: #F07722;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   padding: 40px 0 10px;
@@ -161,7 +177,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 100%;
   padding-bottom: 40px;
 }
@@ -188,7 +204,7 @@ body{
 }
 
 .service-cards span{
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
   width: 90%;
 }
@@ -210,7 +226,7 @@ body{
   }
 
   .service-cards span{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     width: 90%;
   }
@@ -231,14 +247,14 @@ body{
 }
 .home-about .about-title{
   color: #F07722;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   padding: 30px 0;
 }
 
 .home-about .about-para{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 400;
   text-align: center;
   text-align: justify;
@@ -271,14 +287,14 @@ body{
 .vis-mis-out .vision span,
 .vis-mis-out .mission span{
   color: #F07722;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 700;
   border-bottom: 4px solid #ffffff;
 }
 
 .vis-mis-out .vision p,
 .vis-mis-out .mission p{
-  font-size: 18px;
+  font-size: 22px;
   color: #ffffff;
   font-weight: 600;
   padding: 20px 0;
@@ -315,10 +331,10 @@ body{
   .home-about .about-ovm .vision-title-ovm span,
   .home-about .about-ovm .mission-title-ovm span{
     color: #ffffff;
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
-    padding: 20px 0;
-    width: 35%;
+    padding: 20px 0 10px;
+    border-bottom: 4px solid #ffffff;
   }
 
   .home-about .about-ovm .vision-title-ovm p,
@@ -326,8 +342,9 @@ body{
     font-size: 16px;
     color: #ffffff;
     font-weight: 400;
-    align-self: center; doubt
-    width: 55%;
+    align-self: center;
+    padding: 20px 0 ;
+    width: 100%;
   }
 }
 .why-mf{
@@ -352,7 +369,7 @@ body{
 }
 .why-mf .mf-title{
   color: #ffffff;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   padding: 30px 0;
@@ -378,7 +395,7 @@ body{
 }
 .why-mf .mf-point img{
   width: 10px;
-  margin: 20px 0;
+  margin: 24px 0;
   position: absolute;
 }
 .why-mf .mf-point p{
@@ -408,6 +425,9 @@ body{
   .why-mf .mf-left, .why-mf .mf-right{
     width: 80%;  
   }
+  .why-mf .mf-point img{
+    margin: 22px 0;
+  }
   .why-mf .mf-point p{
     font-size: 16px;
     height: 20px;
@@ -415,7 +435,7 @@ body{
 }
 .directors-title{
   color: #F07722;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   padding: 0 0 20px;
@@ -449,13 +469,11 @@ body{
   font-size: 20px;
   font-weight: 700;
   width: 100%;
-  padding: 0 10px;
 }
 .directors-cards p{
   font-size: 16px;
   font-weight: 400;
   width: 100%;
-  padding: 0 10px;
 }
 .oef-cont{
   display: flex;
@@ -468,7 +486,7 @@ body{
 }
 .oef-cont .oef-title{
   color: #ffffff;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   text-align: center;
   align-self: center;
@@ -494,7 +512,7 @@ body{
   width: 150px;
 }
 .oef-cont .main-oef span{
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   color: #ffffff;
   width: 100%;
@@ -530,9 +548,8 @@ body{
   }
   .oef-cont .oef-title{
     font-size: 20px;
-    font-weight: 600;
     width: 80%;
-    color: #000000;
+    color: #282828;
     padding: 0 0 20px;
   }
   .oef-cont .oef-title span{
@@ -543,8 +560,7 @@ body{
     width: 75px;
   }
   .oef-cont .main-oef span{
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
     color: #F07722;
     margin: 10px;
   }
@@ -580,13 +596,13 @@ body{
 .footer .content-right span{
   font-size: 16px;
   font-weight: 700;
-  color: #000000;
+  color: #282828;
   width: 100%;
 }
 .footer .content-right p{
   font-size: 16px;
   font-weight: 400;
-  color: #000000;
+  color: #282828;
   width: 100%;
 }
 .footer .content-right .right-down{
@@ -754,7 +770,6 @@ body{
     padding: 5px 20px 5px 20px;
     font-size: 22px;
     background-color: #F07722;
-    color: #ffffff;
     border: none;
     width: 200px;
     color: #ffffff;
